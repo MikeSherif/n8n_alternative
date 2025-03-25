@@ -1,13 +1,14 @@
 import { useCallback, useState } from 'react';
-import {ReactFlow, addEdge, applyEdgeChanges, applyNodeChanges,} from '@xyflow/react';
+import {ReactFlow, addEdge, applyEdgeChanges, applyNodeChanges, Controls} from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 
 import TextUpdaterNode from '../TextUpdaterNode/TextUpdaterNode.jsx';
-import ListNode from '../ListElement/ListElement.jsx';
 import ListElement from "../ListElement/ListElement.jsx";
+
 
 const rfStyle = {
     backgroundColor: '#B8CEFF',
+    height: '500px'
 };
 
 const initialNodes = [
@@ -56,7 +57,9 @@ function App() {
                 nodeTypes={nodeTypes}
                 fitView
                 style={rfStyle}
-            />
+            >
+                <Controls/>
+            </ReactFlow>
             <ListElement/>
         </div>
     );
