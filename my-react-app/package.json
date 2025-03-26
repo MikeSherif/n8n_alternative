@@ -1,5 +1,6 @@
 {
   "name": "my-react-app",
+  "homepage": "https://mikesherif.github.io/n8n_alternative/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
